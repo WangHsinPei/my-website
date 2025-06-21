@@ -1,0 +1,111 @@
+html, body{	
+	font-family:Helvetica, sans-serif ,"Microsoft JhengHei";
+	-webkit-text-size-adjust:none;
+	background-color:#FFF;
+}
+
+/* --電腦版型------------------------------------- */
+
+#WRAPPER{
+	width:90%;
+	margin:0 auto;
+}
+
+
+#LOGO{
+	width:100%;
+	margin:0 auto;
+	float: left;
+}
+
+#LOGO h1{
+	padding-top:10px;
+}
+
+#CONTENT{
+	float:left;
+	width:80%;
+	margin: 20px auto;
+	overflow:hidden;
+	height:500px;
+	background-image:url(../img/bluesky.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	background-size: cover;
+}
+
+#CONTENT span{
+	width: 100%;
+	display:block;
+	text-align: left;
+	font-size: 0.9em;
+	line-height: 1.7;
+	color: #FFF;
+	background-color: #000;
+	margin-top:480px;
+
+
+}
+
+#FOOTER{
+	float: left;
+	width:100%;
+	text-align:right;
+	font-size: 0.8em;
+	color: #333;
+	padding-bottom:20px;
+}
+
+
+
+@media screen and (max-width: 736px) {
+	
+*{
+	box-sizing:border-box; /* 讓 padding 與 width 解除關係 */
+}
+
+html,body{
+	-webkit-text-size-adjust:none; /* iPhone 旋轉後 文字不要放大 */
+}
+
+
+
+/* --手機版型------------------------------------- */
+
+#WRAPPER{
+	width:100%;
+	background-image:url(images/bg.png);
+	min-width:320px; /* 限定最小寬度 */
+}
+
+#LOGO h1{
+	width: 150px;
+	padding:10px 10px 20px 20px;
+}
+
+#LOGO h1 img{
+	width: 150px;
+}
+
+
+#CONTENT{
+	float:none;
+	width:100%;
+	margin:20px auto;
+	overflow:hidden;
+}
+
+
+#CONTENT span{
+	text-align: center;
+}
+
+#FOOTER{
+	float: none;
+	width:100%;
+	font-size: 0.7em;
+	text-align:center;
+	line-height: 1.2;
+}
+
+}

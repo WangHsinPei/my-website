@@ -1,0 +1,58 @@
+html, body{	
+	font-family:Helvetica, sans-serif ,"Microsoft JhengHei";
+	-webkit-text-size-adjust:none;
+	background-color:#FFF;
+}
+
+/* --電腦版型------------------------------------- */
+
+#WRAPPER{
+	width:90%;
+	margin:0 auto;
+}
+
+
+#LOGO{
+	width:100%;
+	margin:0 auto;
+	float: left;
+}
+
+#LOGO h1{
+	padding-top:10px;
+}
+
+#CONTENT{
+	float:left;
+	width:80%;
+	margin: 20px auto;
+	overflow:hidden;
+	height:500px;
+	background-image:url(../img/bluesky.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	background-size: cover;
+}
+
+#CONTENT span{
+	width: 100%;
+	display:block;
+	text-align: left;
+	font-size: 0.9em;
+	line-height: 1.7;
+	color: #FFF;
+	background-color: #000;
+	margin-top:480px;
+
+
+}
+
+#FOOTER{
+	float: left;
+	display: block; 
+	width:100%;
+	text-align:right;
+	font-size: 0.8em;
+	color: #333;
+	padding-bottom:20px;
+}

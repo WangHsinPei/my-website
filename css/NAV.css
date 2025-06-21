@@ -1,0 +1,161 @@
+html, body{	
+	font-family:Helvetica, sans-serif ,"Microsoft JhengHei";
+	-webkit-text-size-adjust:none;
+	background-color:#FFF;
+}
+
+/* --電腦版型------------------------------------- */
+
+#MENU{ /* phone */
+	display:none;
+}
+
+#NAV{
+	float:left;
+	width:20%;
+	margin:0 auto;	
+}
+
+#NAV #XX{
+	display:none;
+}
+
+.MASK { /*遮罩*/
+	display:none; 
+} 
+
+#NAV ul{
+	width:100%;
+	padding-top:20px;
+}
+
+#NAV ul li{
+	width:90%;
+	display: block;
+	line-height: 3;
+	font-size:0.95em;
+	color: #333;
+	font-weight: lighter;
+}
+
+#NAV ul li:hover{
+	border-bottom: 1px solid #666;
+	background: #f2f2f2;
+}
+
+#NAV ul li a:link{
+	display: block;
+	text-decoration: none;
+	color: #333;
+}
+
+#NAV ul li a:hover,a:visited{
+	text-decoration: none;
+	color:#333;
+}
+
+
+@media screen and (max-width: 736px) {
+	
+*{
+	box-sizing:border-box; /* 讓 padding 與 width 解除關係 */
+}
+
+html,body{
+	-webkit-text-size-adjust:none; /* iPhone 旋轉後 文字不要放大 */
+}
+
+
+/* --手機版型------------------------------------- */
+#TOP{
+	width: 100%;
+	height:100px; 
+	position:fixed; /* 固定在最上面 */
+	top:0;
+	z-index:88;
+	background-color:#fff;
+}
+
+#MENU{
+	display:block;
+	width:100%;
+	height:80px;
+	}
+
+#MENU #BTN{
+	display:block;
+	width:30px;
+	height:30px;
+	position:absolute;
+	right:30px;
+	top:15px;
+	cursor:pointer;
+	}
+
+
+#NAV #XX{
+		display:block;
+		width:30px;
+		height:30px;
+		position:absolute;
+		right:40px;
+		top:-30px;
+		cursor:pointer;
+	}
+
+.MASK { /*遮罩*/
+		width: 100%; 
+		height: 100%; 
+		position: fixed; 
+		display: block;
+		background-color:rgba(0,0,0,0.75); 
+		z-index:9999; 
+	} 
+
+#NAV{
+		width:80%;
+		height:100%;
+		background-color:rgba(255,255,255,1);	
+		position:fixed;
+		top:0;
+		z-index:99999;
+		transform:translate3d(1000px,0px,0px); 
+		/*初始：把選單先推出去 -1000 營幕之外*/
+	}
+	
+	#NAV.goIN{
+		transition:all 1s ease; /* 1s 代表產生動畫時間 */
+		transform:translate3d(100px,0px,0px); /*讓選單回到 0 營幕之內*/
+	}
+	
+	#NAV.goOUT{
+		transition:all 1s ease; /* 1s 代表產生動畫時間 */
+		transform:translate3d(1000px,0px,0px); 
+		/*把選單先推出去 -1000 營幕之外*/
+	}
+
+	
+	#NAV ul{
+		width:300px;
+		height:250px;
+		position:fixed;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		margin:50px auto;		
+	}
+	#NAV li{
+		width:100%;
+		float:none;
+		padding-left: 20px;
+	}	
+	#NAV li a{
+		display:block;
+		width:100%;
+		line-height:2.6;
+		font-size: 1.3em;
+	}	
+	#NAV li a:hover{
+		
+	}
